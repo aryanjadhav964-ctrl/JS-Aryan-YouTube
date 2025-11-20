@@ -31,4 +31,23 @@ const myFunction = function () {
     console.log("Hello World!");
 }  //dataType Function
 
-console.log(typeof newNum);
+// console.log(typeof newNum);
+
+//===========================================================
+//stack (Primitive) & heap (Non-primitive)
+
+let myName = "Aryan Jadhav"
+let newName = myName
+newName = "Atharv Jadhav"
+// console.log(myName);
+// console.log(newName);
+let userOne = {
+    email : "userone@gnail.com",
+    upi : "upi@pay"
+}
+
+let userTwo = userOne
+userTwo.email = "aryan@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
