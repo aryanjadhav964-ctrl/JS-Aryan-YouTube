@@ -48,7 +48,42 @@ function loggedinMessage(userName) {
     return `${userName} is just logged in.`
 }
 
-console.log(loggedinMessage(23));
+// console.log(loggedinMessage(23));
 
 //====================================
 
+//use of rest operator 
+function calculateCartPrice (...num1) {
+    return num1;
+}
+
+// console.log(calculateCartPrice(200,300,400));
+
+//================= another example with object
+
+const user = {
+    name : "Aryan",
+    price : 399
+}
+
+function objectHandler (anyobject) {
+    console.log(`The user is ${anyobject.name} and the budget is ${anyobject.price}.`);
+}
+
+// objectHandler(user)
+
+// objectHandler({
+//     name : "Nikhil",
+//     price : 399
+// })
+
+//===================== example with array
+
+let myNewArray = [200,300,400,500]
+
+function returnSecondValue (getArray) {
+    return getArray[1];
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([100, 200, 300, 400, 1200]));
